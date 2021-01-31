@@ -1,0 +1,12 @@
+# service dirs
+regions-api-*/
+
+# development
+.vscode
+.DS_Store
+
+# environment
+.env
+
+# nginx configuration
+nginx.conf
