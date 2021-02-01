@@ -9,6 +9,10 @@ if [ ! -f .env ]; then
   cat .env.sample > .env
 fi
 
+if [ ! -f nginx.conf ]; then
+  cat nginx.sample > nginx.conf
+fi
+
 echo "Cloning repos..."
 for repo in $repoList; do
   git clone https://github.com/viravir/$repo.git
